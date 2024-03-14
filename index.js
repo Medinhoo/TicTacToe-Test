@@ -133,7 +133,7 @@ function play(){
             matrix[i][j].addEventListener("click", ()=> {
 
                 if(turnPlaying % 2 == 1){ 
-                    matrix[i][j].innerHTML = `<img src="/images/cross.jpg" alt="cross">`;
+                    matrix[i][j].innerHTML = `<img src="./images/cross.jpg" alt="cross">`;
                     value[i][j] = first.team;
                     turnPlaying++;
                     win = checkWin();
@@ -149,7 +149,7 @@ function play(){
                     } 
                 }
                 else{
-                    matrix[i][j].innerHTML = `<img src="/images/circle.png" alt="cross">`; 
+                    matrix[i][j].innerHTML = `<img src="./images/circle.png" alt="cross">`; 
                     value[i][j] = second.team;
                     turnPlaying++;
                     win = checkWin();
@@ -223,12 +223,12 @@ function showEndBox(player, win){
     if(win){
         document.getElementById("endMessage").textContent = 
         `${player.userName} was better this time! Do you want to retry ?..`;
-        endBox.style.backgroundImage = "url(/images/Congratulations.gif)"
+        endBox.style.backgroundImage = "url(./images/Congratulations.gif)"
     }
     else{
         document.getElementById("endMessage").textContent = 
         `It's a draw! Nobody won.. Do you want to retry ?..`;
-        endBox.style.backgroundImage = "url(/images/draw.gif)"
+        endBox.style.backgroundImage = "url(./images/draw.gif)"
         endBox.style.backgroundPosition = "right"
     }
     
