@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div id="helloMessage">
+        <section class="pop">
+            <p id="helloP1"></p><br>
+            <p id="teamP1"></p>
+        </section>
+        <section class="pop">
+            <p id="helloP2"></p><br>
+            <p id="teamP2"></p>  
+        </section>
+    </div>
+
+    <div id="container">
+
+        <div id="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+
+        <div id="endBox">
+            <p id="endMessage"></p>
+            <button id="restartBtn" onclick="restart()">Restart a game</button>
+        </div>
+
+        <section id="myButtons">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="quitBtn" onclick="quit()">Quit</button>
+        </section>
+        
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
